@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alvin Isac - Resume</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3CJKHC0G47"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3CJKHC0G47');
+  </script>
+
+  <style>
+    :root {
+      --ink: #0b0f1a;
+      --paper: #f7f2ea;
+      --accent: #0ea5a4;
+      --accent-2: #f59e0b;
+      --shadow: rgba(10, 12, 20, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(900px 300px at 10% 0%, rgba(14, 165, 164, 0.18), transparent 60%),
+        radial-gradient(600px 240px at 90% 10%, rgba(245, 158, 11, 0.18), transparent 60%),
+        #e8edf2;
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 56px auto 72px;
+      padding: 0 20px;
+    }
+
+    .hero {
+      background: linear-gradient(140deg, #ffffff 0%, #fdf7f1 60%, #f7fbfb 100%);
+      border-radius: 24px;
+      padding: 36px 32px 30px;
+      box-shadow: 0 20px 60px var(--shadow);
+      display: grid;
+      gap: 16px;
+      text-align: left;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: rgba(14, 165, 164, 0.12);
+      color: #0f766e;
+      font-weight: 600;
+      width: fit-content;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 5vw, 46px);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .role {
+      margin: 0;
+      font-size: 18px;
+      color: #3b4556;
+      max-width: 560px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 8px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 18px;
+      border-radius: 12px;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 12px 30px rgba(14, 165, 164, 0.35);
+    }
+
+    .ghost {
+      background: white;
+      color: #0f172a;
+      border: 1px solid rgba(15, 23, 42, 0.12);
+    }
+
+    .viewer {
+      margin-top: 28px;
+      background: var(--paper);
+      border-radius: 24px;
+      padding: 18px;
+      box-shadow: 0 20px 50px var(--shadow);
+    }
+
+    iframe {
+      width: 100%;
+      height: min(100vh, 2550px);
+      border: none;
+      border-radius: 18px;
+    }
+
+    .footer {
+      margin-top: 18px;
+      font-size: 14px;
+      color: #64748b;
+      text-align: center;
+    }
+
+    @media (max-width: 720px) {
+      .hero {
+        padding: 28px 22px;
+      }
+
+      .actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <section class="hero">
+      <span class="badge">Resume</span>
+      <h1>Alvin Isac Premsunder</h1>
+      <p class="role">Robotics engineer focused on controls and autonomous systems.</p>
+      <p style="margin: 8px 0 0; font-size: 14px; color: #64748b;">Download for offline viewing or open in a new tab to access all hyperlinks</p>
+      <div class="actions">
+        <a class="button primary" href="Alvin_Isac_Resume.pdf" download>
+          Download Resume (PDF)
+        </a>
+        <a class="button ghost" href="Alvin_Isac_Resume.pdf" target="_blank" rel="noreferrer">
+          Open in New Tab
+        </a>
+      </div>
+    </section>
+
+    <section class="viewer">
+      <iframe 
+        src="Alvin_Isac_Resume.pdf" 
+        title="Alvin Isac Resume"
+      ></iframe>
+    </section>
+
+    <p class="footer">Questions ? Reach out and I will reply quickly.</p>
+  </main>
+</body>
+</html>
